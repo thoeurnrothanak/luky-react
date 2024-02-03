@@ -66,3 +66,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### `npm audit fix --force` for `Error 0308010c:digital envelope routines::unsupported`
+
+Use an up-to-date version of Node.js, and also use packages that are up-to-date with security fixes.

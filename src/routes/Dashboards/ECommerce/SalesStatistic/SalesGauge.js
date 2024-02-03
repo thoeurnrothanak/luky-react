@@ -32,7 +32,7 @@ const SalesGauge = ({ salesGaugeData }) => {
     categoryAxis.renderer.labels.template.horizontalCenter = 'right';
     categoryAxis.renderer.labels.template.fontWeight = 500;
 
-    categoryAxis.renderer.labels.template.adapter.add('fill', function(fill, target) {
+    categoryAxis.renderer.labels.template?.adapter.add('fill', function(fill, target) {
       return target.dataItem.index >= 0 ? '#6C757D' : fill;
     });
     categoryAxis.renderer.minGridDistance = 20;
@@ -62,7 +62,7 @@ const SalesGauge = ({ salesGaugeData }) => {
     series2.columns.template.tooltipText = '{category}: [bold]{value}[/]';
     series2.columns.template.radarColumn.cornerRadius = 30;
     series2.columns.template.disabled = false;
-    series2.columns.template.adapter.add('fill', function(fill, target) {
+    series2.columns.template?.adapter.add('fill', function(fill, target) {
       return chart.colors.getIndex(target.dataItem.index);
     });
 

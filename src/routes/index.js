@@ -5,7 +5,6 @@ import Components from './Components';
 import Apps from './Apps';
 import Extensions from './Extensions';
 import Charts from './Charts';
-import Maps from './Maps';
 import Widgets from './Widgets';
 import Metrics from './Metrics';
 import Login from './Auth/Login';
@@ -61,7 +60,6 @@ const Routes = () => {
         <Route path="/components" component={Components} />
         <Route path="/extensions" component={Extensions} />
         <Route path="/visualization/chart" component={Charts} />
-        <Route path="/visualization/map" component={Maps} />
         <Route path="/extra-pages" component={ExtraPages} />
         <Route path="/apps" component={Apps} />
         <Route path="/custom-timeline" component={CustomTimelines} />
